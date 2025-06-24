@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9F7AEA"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#C4B5FD" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="blur" in2="SourceGraphic" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Main body - cute rounded square with gradient -->
+  <rect x="8" y="8" width="16" height="16" rx="4" fill="url(#bodyGradient)"/>
+  
+  <!-- Shiny overlay -->
+  <path d="M8 12C8 9.79086 9.79086 8 12 8H20C22.2091 8 24 9.79086 24 12V12L8 12V12Z" fill="white" fill-opacity="0.2"/>
+  
+  <!-- Eyes with shine -->
+  <rect x="12" y="12" width="3" height="3" rx="1" fill="white"/>
+  <circle cx="13.5" cy="13" r="0.5" fill="#E0E7FF"/>
+  <rect x="17" y="12" width="3" height="3" rx="1" fill="white"/>
+  <circle cx="18.5" cy="13" r="0.5" fill="#E0E7FF"/>
+  
+  <!-- Happy mouth with gradient -->
+  <path d="M13 17C13 17 14.5 19 16 19C17.5 19 19 17 19 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Cute antenna with gradient -->
+  <path d="M16 8C16 8 16 6 16 5C16 4 17 3 18 4C19 5 18 8 18 8" stroke="url(#bodyGradient)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Sparkle effects -->
+  <circle cx="9" cy="23" r="1" fill="url(#bodyGradient)"/>
+  <circle cx="23" cy="9" r="1" fill="url(#bodyGradient)"/>
+  <circle cx="23" cy="23" r="1" fill="url(#bodyGradient)"/>
+  
+  <!-- Extra sparkles -->
+  <circle cx="10" cy="10" r="0.5" fill="white" fill-opacity="0.8"/>
+  <circle cx="22" cy="14" r="0.5" fill="white" fill-opacity="0.8"/>
+</svg>
