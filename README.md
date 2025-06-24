@@ -1,23 +1,17 @@
-# Pixel Chat
+# Steam Size Sorter
 
-A frictionless game chatroom system where users can instantly join and discuss games without barriers.
 
 ## Features
 
-- Instant anonymous access to game-specific chatrooms
-- Steam authentication for enhanced features
-- Real-time messaging
-- Dynamic chatroom creation for Steam games
-- Rate limiting to prevent spam
-- Game search and filtering
+- Sorts all games on Steam account by storage size even if they aren't installed.
+- Steam authentication
+- Game search 
+- Shows total storage size of entire library
 
 ## Tech Stack
 
 - Frontend: React + TailwindCSS
 - Backend: Node.js + Express
-- Real-time: Socket.io
-- Database: MongoDB
-- Cache: Redis
 - Authentication: Steam OpenID
 
 ## Development
